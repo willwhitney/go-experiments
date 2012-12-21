@@ -69,7 +69,7 @@ func main() {
 	}
 	urls := make(chan []string, 1000)
 	liveThreads := 1
-	maxThreads := 100
+	maxThreads := 200
 	go Crawl("http://en.wikipedia.org/wiki/Outer_space", urls)
 
 	// listen to the channel `urls`, which pipes in lists of urls
